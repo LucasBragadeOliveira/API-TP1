@@ -100,9 +100,9 @@ public class ControleContaCorrente {
 		if(idAgencia != null 
 				&& idAgencia != CC.getAgencia().getId() 
 				&& daoAgencia.procurarPorId(idAgencia) != null) {
-			Agencia AgOriginal = daoAgencia.procurarPorId(CC.getAgencia().getId());			
-			AgOriginal.removerConta(CC);			
+			Agencia AgOriginal = daoAgencia.procurarPorId(CC.getAgencia().getId());
 			Agencia AgNova = daoAgencia.procurarPorId(idAgencia);
+			AgOriginal.removerConta(CC);
 			AgNova.adicionarConta(CC);
 		}
 
