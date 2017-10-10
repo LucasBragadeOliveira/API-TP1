@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<p> Cnpj:
+			<ul>
+				<li> 64.175.804/0001-04
+				<li> 65.324.499/0001-38
+				<li> 12.272.772/0001-61
+			</ul> 
+		</p>
+		<form action="/banco" method="post">
+			<input type="hidden" name="_method" value="put" />
+
+			codigo: <input type="text" name="codigo"> <p/>
+			nome: <input type="text" name="nome"> <p/>
+			cnpj: <input type="text" name="cnpj"> <p/>
+			<input type="submit">
+		</form>
+	</body>
+</html>
